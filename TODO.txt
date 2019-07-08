@@ -1,0 +1,21 @@
+Todo tank you:
+
+Stappen plan:
+- MP Mine (Niet zichtbaar op elke client)
+- Levels
+- Multiplayer
+
+WORLDS/MAPTYPES
+-Grass plains (few trees, castle walls) 1-10, 5 tanks
+-Forrest (dense trees, kan je muren van maken, rivers) 11-20
+-Town 21-30
+-snow 31-40
+-Desert 41-50
+
+LEVEL IDEAS:
+-Meerdere teams
+
+Music:
+Kevin Macleod (Credits geven aan de beste man) https://incompetech.com/music/royalty-free/music.html
+- Pookatori and Friends (In game)
+- Pixelland (Main menu)

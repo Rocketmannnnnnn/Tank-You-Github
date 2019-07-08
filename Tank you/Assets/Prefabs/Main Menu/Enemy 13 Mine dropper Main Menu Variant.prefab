@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7102445336552653107
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7791339489501178853, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy 13 Mine dropper Main Menu Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253335391386757857, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939098166520467450, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: cross
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939098166520467450, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: deathExplosion
+      value: 
+      objectReference: {fileID: 8766581221083709838, guid: fbba3063e15a9a541ad5bf9877aab2dd,
+        type: 3}
+    - target: {fileID: 1141975456, guid: b3ed53af76b86ff40ab1a3854e699d69, type: 3}
+      propertyPath: mine
+      value: 
+      objectReference: {fileID: 3871242530155604654, guid: d102ea9ea760ec345ace50ca67e6e6cd,
+        type: 3}
+    - target: {fileID: 6925782571031627538, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 8623703570524761379, guid: 7725e13a6ae0ee1478d7214a38d6e6d9,
+        type: 3}
+    - target: {fileID: 6925782571031627538, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: fireDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925782571031627538, guid: b3ed53af76b86ff40ab1a3854e699d69,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3ed53af76b86ff40ab1a3854e699d69, type: 3}
