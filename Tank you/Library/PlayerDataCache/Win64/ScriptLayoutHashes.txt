@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Beta V1.1.1/Tank You Beta V1.1.1.exe
+C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Beta V1.2/Tank You Beta V1.2.exe
 SceneListBegin?
 Assets/Scenes/Main Menu.unity
 Assets/Scenes/_Levels 1-10/Level 1.unity
@@ -23,6 +23,11 @@ Assets/Scenes/_Levels 11-20/Level 17.unity
 Assets/Scenes/_Levels 11-20/Level 18.unity
 Assets/Scenes/_Levels 11-20/Level 19.unity
 Assets/Scenes/_Levels 11-20/Level 20.unity
+Assets/Scenes/_Levels 21-30/Level 21.unity
+Assets/Scenes/_Levels 21-30/Level 22.unity
+Assets/Scenes/_Levels 21-30/Level 23.unity
+Assets/Scenes/_Levels 21-30/Level 24.unity
+Assets/Scenes/_Levels 21-30/Level 25.unity
 Assets/Scenes/NetworkLevel.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
@@ -99,6 +104,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 a6c652430525d07a941c4827bddb9863 Assembly-CSharp.dll:.MultipleBarrelAim
 f542c1afca5bb4022f91fdda19b8d622 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.DepthOfField
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
+6afa3d7a5404c65a2f79f114d37bb7ad Assembly-CSharp.dll:.TankStation
 cbdaf6289eb255feedd0bee0a753faee Assembly-CSharp.dll:.FollowAtDistance
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput

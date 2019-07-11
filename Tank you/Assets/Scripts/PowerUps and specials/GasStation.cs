@@ -55,19 +55,19 @@ public class GasStation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Tank"))
+        if (other.transform.root.CompareTag("Tank"))
         {
-            if (other.GetComponent<TankTag>().IsPlayer())
+            if (other.transform.root.GetComponent<TankTag>().IsPlayer())
             {
                 if (!poweredUpTanks.Contains(other.gameObject))
                 {
-                    if(other.GetComponent<PlayerTankController>() != null)
+                    if(other.transform.root.GetComponent<PlayerTankController>() != null)
                     {
-                        PlayerTankController ptc = other.GetComponent<PlayerTankController>();
+                        PlayerTankController ptc = other.transform.root.GetComponent<PlayerTankController>();
                         ptc.adaptFireDelay(ptc.getFireDelay() / fireRateIncrease);
-                    } else if (other.GetComponent<KeyboardMultiplayerTankController>() != null)
+                    } else if (other.transform.root.GetComponent<KeyboardMultiplayerTankController>() != null)
                     {
-                        KeyboardMultiplayerTankController kmt = other.GetComponent<KeyboardMultiplayerTankController>();
+                        KeyboardMultiplayerTankController kmt = other.transform.root.GetComponent<KeyboardMultiplayerTankController>();
                         kmt.adaptFireDelay(kmt.getFireDelay() / fireRateIncrease);
                     }
                     poweredUpTanks.Add(other.gameObject);
