@@ -54,7 +54,7 @@ public class TankStation : MonoBehaviour
         {
             GameObject tank = other.transform.root.gameObject;
 
-            if (!hadPowerup.Contains(tank))
+            if (!hadPowerup.Contains(tank) && tank.GetComponent<TankTag>().IsPlayer())
             {
                 poweredUp.Add(tank, Time.time + powerupDuration);
                 hadPowerup.Add(tank);
