@@ -3,7 +3,7 @@ Todo tank you:
 Stappen plan:
 - MP Mine (Niet zichtbaar op elke client)
 - Levels
-- Multiplayer
+- Main menu UI
 
 WORLDS/MAPTYPES
 -Grass plains (few trees, castle walls) 1-10, 5 tanks
