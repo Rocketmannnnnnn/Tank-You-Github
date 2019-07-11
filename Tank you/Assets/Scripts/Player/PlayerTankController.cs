@@ -39,7 +39,8 @@ public class PlayerTankController : MonoBehaviour
 
     private void Awake()
     {
-        floorMask = LayerMask.GetMask("MouseFloor");
+        //floorMask = LayerMask.GetMask("MouseFloor");
+        floorMask = 1 << 11;
         barrelRigidbody = barrel.GetComponent<Rigidbody>();
         nextFire = 0f;
         nextMine = 0f;
@@ -86,7 +87,7 @@ public class PlayerTankController : MonoBehaviour
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit groundHit;
 
-        if (Physics.Raycast(camRay, out groundHit, floorMask))
+        if (Physics.Raycast(camRay, out groundHit, 200, floorMask))
         {
             Vector3 barrelToMouse = groundHit.point - transform.position;
             barrelToMouse.y = 0f;

@@ -14,11 +14,13 @@ public class LineAimAssist : MonoBehaviour
     private Transform lineStartPos;
 
     [SerializeField]
-    private float lineRange = 40;
+    private float lineRange = 50;
     
     void Start()
     {
-        floorMask = LayerMask.GetMask("MouseFloor");
+        //floorMask = LayerMask.GetMask("MouseFloor");
+        floorMask = 1 << 11;
+        //Debug.Log("bitshift " + floorMask.ToString());
         line = GetComponent<LineRenderer>();
     }
 
@@ -27,7 +29,7 @@ public class LineAimAssist : MonoBehaviour
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit groundHit;
 
-        if (Physics.Raycast(camRay, out groundHit, floorMask))
+        if (Physics.Raycast(camRay, out groundHit, 200, floorMask))
         {
             Vector3 bulletPos = lineStartPos.position;
             line.SetPosition(0, bulletPos);
@@ -41,6 +43,8 @@ public class LineAimAssist : MonoBehaviour
 
             line.SetPosition(1, hitpos);
             lineEndObject.transform.position = hitpos;
+
+            //Debug.Log(groundHit.transform.gameObject.name);
         }
     }
 }
