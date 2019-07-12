@@ -4,6 +4,7 @@ Stappen plan:
 - MP Mine (Niet zichtbaar op elke client)
 - Levels
 - Main menu UI
+- Copyright in de credits zetten: C, Jasper Bonefaas, datum
 
 WORLDS/MAPTYPES
 -Grass plains (few trees, castle walls) 1-10, 5 tanks
