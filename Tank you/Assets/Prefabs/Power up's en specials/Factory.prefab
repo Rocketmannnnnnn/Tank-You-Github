@@ -4914,7 +4914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 4878434260212775033}
   tank: {fileID: 1720629638783870148, guid: 8f4268d66a237664a949dc5d8a339147, type: 3}
-  spawnDelay: 5
+  spawnDelay: 10
   sound: {fileID: 4878434259210079340}
 --- !u!82 &4878434259210079340
 AudioSource:
