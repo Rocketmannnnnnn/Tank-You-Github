@@ -15,6 +15,7 @@ WORLDS/MAPTYPES
 
 LEVEL IDEAS:
 -Meerdere teams
+-Pixel world
 
 Music:
 Kevin Macleod (Credits geven aan de beste man) https://incompetech.com/music/royalty-free/music.html
