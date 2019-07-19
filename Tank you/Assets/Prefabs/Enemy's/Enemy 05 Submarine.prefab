@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &249768807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598527044010165095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06985076b82f1234caafa2ce909b5908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smartAimAfter: 25
+  rotateSpeed: 2
+  bullet: {fileID: 4694139501477394027, guid: 9786fcaa664cc8143b1dfa14924dfb2e, type: 3}
+  bulletSpawnpos: {fileID: 3217928742085887583}
+  fireDelay: 1.5
+  bulletSpeed: 2
 --- !u!114 &1624629973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,24 +52,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &249768807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598527044010165095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06985076b82f1234caafa2ce909b5908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smartAimAfter: 25
-  rotateSpeed: 2
-  bullet: {fileID: 4694139501477394027, guid: 9786fcaa664cc8143b1dfa14924dfb2e, type: 3}
-  bulletSpawnpos: {fileID: 3217928742085887583}
-  fireDelay: 1.5
-  bulletSpeed: 2
 --- !u!136 &844080864
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!198 &844080868
+--- !u!198 &1466540398
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,8 +211,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.6
-      minScalar: 0.5
+      scalar: 2
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -961,7 +961,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 300
+      scalar: 150
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1071,7 +1071,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 0.5
+      scalar: 0.75
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4817,16 +4817,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 3649134119270144779, guid: 23a8313bff28bae46b4187ba5c126832,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 924a6929d7a14784da2e103c0cf97168, type: 2}
     - target: {fileID: 1289639107226072968, guid: 23a8313bff28bae46b4187ba5c126832,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 008cf0a3e7d1e914c9ecc49cb5176684, type: 2}
+    - target: {fileID: 3649134119270144779, guid: 23a8313bff28bae46b4187ba5c126832,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 924a6929d7a14784da2e103c0cf97168, type: 2}
     m_RemovedComponents:
     - {fileID: 9065170232947867545, guid: 23a8313bff28bae46b4187ba5c126832, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 23a8313bff28bae46b4187ba5c126832, type: 3}

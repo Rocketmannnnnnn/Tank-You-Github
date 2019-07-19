@@ -45,6 +45,7 @@ public class MineV2 : MonoBehaviour
 
     private void collisionCheck(Collider other)
     {
+        //Debug.Log(other.name);
         if (wentOff || !(parent == other.transform.root.gameObject))
         {
             /*
@@ -73,12 +74,18 @@ public class MineV2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        collisionCheck(other);
+        if (!other.isTrigger)
+        {
+            collisionCheck(other);
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        collisionCheck(other);
+        if (!other.isTrigger)
+        {
+            collisionCheck(other);
+        }
     }
 
     private void explode()
