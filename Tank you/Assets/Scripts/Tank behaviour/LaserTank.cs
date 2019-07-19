@@ -61,21 +61,15 @@ public class LaserTank : MonoBehaviour
         {
             if(status == Status.charged)
             {
-                
+                agent.isStopped = false;
+
                 if (enemyInSight())
                 {
                     aim();
-
-                    agent.isStopped = true;
-
-                    if (agent.velocity == Vector3.zero)
-                    {
-                        fire();
-                        status = Status.dischargeing;
-                    }
+                    fire();
+                    status = Status.dischargeing;
                 } else
                 {
-                    agent.isStopped = false;
                     agent.SetDestination(lastEnemyPosition);
                 }
             } else if (status == Status.chargeing) {
@@ -88,16 +82,8 @@ public class LaserTank : MonoBehaviour
             } else if (status == Status.dischargeing)
             {
                 //DISCHARGE
-                if (enemyInSight())
-                {
-                    aim();
-                }
+                aim();
                 discharge();
-            }
-
-            if (!enemyInSight())
-            {
-                enemy = null;
             }
         }
 
