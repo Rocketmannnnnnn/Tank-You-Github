@@ -74,7 +74,7 @@ public class MineV2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.isTrigger)
+        if (!other.isTrigger || other.CompareTag("Mine"))
         {
             collisionCheck(other);
         }
@@ -82,7 +82,7 @@ public class MineV2 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (!other.isTrigger)
+        if (!other.isTrigger || other.CompareTag("Mine"))
         {
             collisionCheck(other);
         }
