@@ -45,6 +45,16 @@ public class SonarArm : MonoBehaviour
                 enemyHit = true;
             }
         }
+
+        if (other.transform.root.gameObject.CompareTag("Tank"))
+        {
+            if (!teamTag.Equals(other.transform.root.GetComponent<TankTag>().getTeamTag()))
+            {
+                enemyPosition = other.transform.root.gameObject.transform.position;
+                hitTime = Time.time;
+                enemyHit = true;
+            }
+        }
     }
 
     //Is an enemy hit in the last scan
