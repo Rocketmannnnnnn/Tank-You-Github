@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2836611038056264955}
   - component: {fileID: 5060169492491069030}
   - component: {fileID: 4350887205975197282}
+  - component: {fileID: 1592732215056147791}
   m_Layer: 0
   m_Name: Cactus 1
   m_TagString: Untagged
@@ -109,3 +110,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.012, y: 1.96, z: 0.061000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1592732215056147791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892010655468199368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5259002007d063444bb98261db12d858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyByFire: 1
+  newObject: {fileID: 0}
