@@ -73,12 +73,18 @@ public class NetworkMine : NetworkBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        collisionCheck(other);
+        if (!other.isTrigger || other.CompareTag("Mine"))
+        {
+            collisionCheck(other);
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        collisionCheck(other);
+        if (!other.isTrigger || other.CompareTag("Mine"))
+        {
+            collisionCheck(other);
+        }
     }
 
     private void explode()
