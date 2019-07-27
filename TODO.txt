@@ -2,8 +2,12 @@ Todo tank you:
 
 Stappen plan:
 - MP Mine (Niet zichtbaar op elke client)
-- Levels
-- Main menu UI
+
+LEVEL IDEAS:
+-Meerdere teams
+-Pixel world
+
+***DONE***
 - Copyright in de credits zetten: C, Jasper Bonefaas, datum
 
 WORLDS/MAPTYPES
@@ -12,10 +16,6 @@ WORLDS/MAPTYPES
 -Town 21-30
 -snow 31-40
 -Desert 41-50
-
-LEVEL IDEAS:
--Meerdere teams
--Pixel world
 
 Music:
 Kevin Macleod (Credits geven aan de beste man) https://incompetech.com/music/royalty-free/music.html
