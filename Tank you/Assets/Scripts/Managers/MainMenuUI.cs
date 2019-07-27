@@ -142,7 +142,7 @@ public class MainMenuUI : MonoBehaviour
 
         if (add)
         {
-            if(startLevelNumber + 10 <= maxLevelIndex && startLevelNumber + 10 < 100)
+            if(startLevelNumber + 10 <= maxLevelIndex && startLevelNumber + 10 < 50)
             {
                 startLevelNumber += 10;
                 setStartLevelText(startLevelNumber);
