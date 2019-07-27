@@ -20,6 +20,9 @@ public class Teleporters : MonoBehaviour
         if (other.CompareTag("Tank"))
         {
             objectList.Add(new TpObjectTimer(other.gameObject, Time.time));
+        } else if (other.transform.root.CompareTag("Tank"))
+        {
+            objectList.Add(new TpObjectTimer(other.transform.root.gameObject, Time.time));
         }
     }
 
@@ -42,6 +45,10 @@ public class Teleporters : MonoBehaviour
         foreach (TpObjectTimer obj in objectList)
         {
             if(obj.toTeleport == other.gameObject)
+            {
+                objectList.Remove(obj);
+                break;
+            } else if (obj.toTeleport == other.transform.root.gameObject)
             {
                 objectList.Remove(obj);
                 break;

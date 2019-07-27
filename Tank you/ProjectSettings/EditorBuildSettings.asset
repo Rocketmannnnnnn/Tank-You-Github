@@ -129,6 +129,36 @@ EditorBuildSettings:
     path: Assets/Scenes/_Levels 31-40/Level 40.unity
     guid: 418167001de53fc46b553c768bbbbf54
   - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 41.unity
+    guid: 75f8e3ae72ac22c4e8a539dd8c8eb4ac
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 42.unity
+    guid: a8af815595b814544bcdd1601d1dd182
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 43.unity
+    guid: bf152493ee9769746991aff36c3edab8
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 44.unity
+    guid: 388b179a5cd217a4ea419884a2d820bb
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 45.unity
+    guid: 6ef52b9ca7c5648499e083ef11f06a82
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 46.unity
+    guid: 621ff57deaf21a24eaa22a3803a8ca0a
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 47.unity
+    guid: 012051c356d6a9547b7b88b19828c714
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 48.unity
+    guid: 6bdb2478811e155468bd0ca5ed8f915e
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 49.unity
+    guid: c6e06a0e01c4e5c459756fe6b84b9767
+  - enabled: 1
+    path: Assets/Scenes/_Levels 41-50/Level 50.unity
+    guid: 975a4ef3121fa7c4ebed7b0465456685
+  - enabled: 1
     path: Assets/Scenes/NetworkLevel.unity
     guid: 2a7bb19c71e88224ab335c674b661c20
   m_configObjects: {}
