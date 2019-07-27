@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/_Levels 41-50/Level 50.unity
+- path: Assets/Scenes/NetworkLevel.unity
   isLoaded: 1
   isActive: 1
