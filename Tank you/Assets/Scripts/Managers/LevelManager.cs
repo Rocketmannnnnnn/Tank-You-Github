@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     private float fadeInDelay = 3.5f;
     private float idleMoment;
     private PauseManager pauseManager;
+    private GameObject musicInstance;
 
     [SerializeField]
     private Transform playerSpawn;
@@ -73,7 +74,7 @@ public class LevelManager : MonoBehaviour
 
         if(GameObject.FindWithTag("Music") == null)
         {
-            GameObject musicInstance = Instantiate(musicObject);
+            musicInstance = Instantiate(musicObject);
             DontDestroyOnLoad(musicInstance);
         }
 

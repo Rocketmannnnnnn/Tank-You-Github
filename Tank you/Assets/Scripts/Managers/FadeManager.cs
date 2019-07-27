@@ -58,6 +58,7 @@ public class FadeManager : MonoBehaviour
         {
             if(Time.time > loadMoment)
             {
+                Destroy(GameObject.FindWithTag("Music"));
                 SceneManager.LoadScene(nextLevelIndex);
             }
         }
