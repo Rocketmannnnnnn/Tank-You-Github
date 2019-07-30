@@ -1,59 +1,9 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Beta V1.3/Tank You Beta V1.3.exe
+C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.0.1/Tank You NetworkTest.exe
 SceneListBegin?
-Assets/Scenes/Main Menu.unity
-Assets/Scenes/_Levels 1-10/Level 1.unity
-Assets/Scenes/_Levels 1-10/Level 2.unity
-Assets/Scenes/_Levels 1-10/Level 3.unity
-Assets/Scenes/_Levels 1-10/Level 4.unity
-Assets/Scenes/_Levels 1-10/Level 5.unity
-Assets/Scenes/_Levels 1-10/Level 6.unity
-Assets/Scenes/_Levels 1-10/Level 7.unity
-Assets/Scenes/_Levels 1-10/Level 8.unity
-Assets/Scenes/_Levels 1-10/Level 9.unity
-Assets/Scenes/_Levels 1-10/Level 10.unity
-Assets/Scenes/_Levels 11-20/Level 11.unity
-Assets/Scenes/_Levels 11-20/Level 12.unity
-Assets/Scenes/_Levels 11-20/Level 13.unity
-Assets/Scenes/_Levels 11-20/Level 14.unity
-Assets/Scenes/_Levels 11-20/Level 15.unity
-Assets/Scenes/_Levels 11-20/Level 16.unity
-Assets/Scenes/_Levels 11-20/Level 17.unity
-Assets/Scenes/_Levels 11-20/Level 18.unity
-Assets/Scenes/_Levels 11-20/Level 19.unity
-Assets/Scenes/_Levels 11-20/Level 20.unity
-Assets/Scenes/_Levels 21-30/Level 21.unity
-Assets/Scenes/_Levels 21-30/Level 22.unity
-Assets/Scenes/_Levels 21-30/Level 23.unity
-Assets/Scenes/_Levels 21-30/Level 24.unity
-Assets/Scenes/_Levels 21-30/Level 25.unity
-Assets/Scenes/_Levels 21-30/Level 26.unity
-Assets/Scenes/_Levels 21-30/Level 27.unity
-Assets/Scenes/_Levels 21-30/Level 28.unity
-Assets/Scenes/_Levels 21-30/Level 29.unity
-Assets/Scenes/_Levels 21-30/Level 30.unity
-Assets/Scenes/_Levels 31-40/Level 31.unity
-Assets/Scenes/_Levels 31-40/Level 32.unity
-Assets/Scenes/_Levels 31-40/Level 33.unity
-Assets/Scenes/_Levels 31-40/Level 34.unity
-Assets/Scenes/_Levels 31-40/Level 35.unity
-Assets/Scenes/_Levels 31-40/Level 36.unity
-Assets/Scenes/_Levels 31-40/Level 37.unity
-Assets/Scenes/_Levels 31-40/Level 38.unity
-Assets/Scenes/_Levels 31-40/Level 39.unity
-Assets/Scenes/_Levels 31-40/Level 40.unity
-Assets/Scenes/_Levels 41-50/Level 41.unity
-Assets/Scenes/_Levels 41-50/Level 42.unity
-Assets/Scenes/_Levels 41-50/Level 43.unity
-Assets/Scenes/_Levels 41-50/Level 44.unity
-Assets/Scenes/_Levels 41-50/Level 45.unity
-Assets/Scenes/_Levels 41-50/Level 46.unity
-Assets/Scenes/_Levels 41-50/Level 47.unity
-Assets/Scenes/_Levels 41-50/Level 48.unity
-Assets/Scenes/_Levels 41-50/Level 49.unity
-Assets/Scenes/_Levels 41-50/Level 50.unity
-Assets/Scenes/NetworkLevel.unity
+Assets/Scenes/_NetworkScenes/Lobby.unity
+Assets/Scenes/_NetworkScenes/PlayScene.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 a2edbd06efb2157215acadcaf13150a1 Assembly-CSharp.dll:.ChangeOnContact
@@ -171,7 +121,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 de0e373f9e7fb0fa48caeb13c2e57300 NavMeshComponentsExamples.dll:.DestroyOnTrigger
 6b27e602ffeb13cf00696cdae4dd0fd2 Assembly-CSharp.dll:.LineAimAssist
 e82c0521cdfe8cb6a168ef7208a98d4a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Vignette
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NetworkGameManager
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8747051d8c53856e2def93af4f2a8b08 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -360,7 +309,6 @@ c6dda53e4a9f99528895c50135b25373 Assembly-CSharp.dll:.EnemyAimV3
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 f978b8921f176b5dfa8e62a5d40962a0 Assembly-CSharp.dll:.Bullet
 8d4458b476a9a4dd8df843a849fcfffa NavMeshComponents.dll:UnityEngine.AI.NavMeshSurface
-21e871d89bbce53c038fc75ad1b7c7f3 Assembly-CSharp.dll:.PlayerSpawner
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RandomMovement
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3849f6c5d44f1bcfd206cafbb18a3840 Assembly-CSharp.dll:.SpecialOpsAim
