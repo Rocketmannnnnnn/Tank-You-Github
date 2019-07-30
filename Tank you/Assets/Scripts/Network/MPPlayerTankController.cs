@@ -7,7 +7,6 @@ public class MPPlayerTankController : NetworkBehaviour
 {
     private int floorMask;
     private float camRayLength = 100f;
-    private Rigidbody barrelRigidbody;
     private float nextFire;
     private float nextMine;
 
@@ -41,7 +40,6 @@ public class MPPlayerTankController : NetworkBehaviour
     private void Awake()
     {
         floorMask = LayerMask.GetMask("MouseFloor");
-        barrelRigidbody = barrel.GetComponent<Rigidbody>();
         nextFire = 0f;
         nextMine = 0f;
         tankMovementSpeed = tankMovementSpeed / 10;
@@ -56,7 +54,6 @@ public class MPPlayerTankController : NetworkBehaviour
 
             direction += direction * Time.deltaTime;
             transform.Translate(direction * tankMovementSpeed);
-
             frame.transform.LookAt(transform.position + direction);
             tracks.transform.LookAt(transform.position + direction);
         }
@@ -69,12 +66,14 @@ public class MPPlayerTankController : NetworkBehaviour
             if (Input.GetButtonDown("PrimaryFire") && Time.time > nextFire)
             {
                 Cmdfire();
+                nextFire = Time.time + fireDelay;
             }
 
             //If mine input, deploy mine
             if (Input.GetButtonDown("SecondaryFire") && Time.time > nextMine)
             {
                 CmddeployMine();
+                nextMine = Time.time + mineDelay;
             }
         }
 
@@ -94,7 +93,7 @@ public class MPPlayerTankController : NetworkBehaviour
             barrelToMouse *= -1;
 
             Quaternion newRotation = Quaternion.LookRotation(barrelToMouse);
-            barrelRigidbody.MoveRotation(newRotation);
+            barrel.transform.rotation = newRotation;
         }
     }
 
@@ -102,7 +101,6 @@ public class MPPlayerTankController : NetworkBehaviour
     [Command]
     private void Cmdfire()
     {
-        nextFire = Time.time + fireDelay;
         GameObject newBullet = Instantiate(bullet, bulletSpawnpos.position, bulletSpawnpos.rotation);
         NetworkServer.Spawn(newBullet);
     }
@@ -111,7 +109,6 @@ public class MPPlayerTankController : NetworkBehaviour
     [Command]
     private void CmddeployMine()
     {
-        nextMine = Time.time + mineDelay;
         GameObject mineInstance = Instantiate(mine, transform.position, transform.rotation);
         mineInstance.GetComponent<NetworkMine>().setParent(gameObject);
         NetworkServer.Spawn(mineInstance);
