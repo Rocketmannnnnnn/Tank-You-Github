@@ -22,8 +22,6 @@ public class SetupLocalPlayer : NetworkBehaviour
         if (isLocalPlayer)
         {
             GetComponent<MPPlayerTankController>().enabled = true;
-
-            GetComponent<TankTag>().setTeamTag("Player");
         }
 
         barrel.GetComponent<Renderer>().material.color = playerColor;

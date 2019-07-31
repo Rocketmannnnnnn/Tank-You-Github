@@ -1,8 +1,9 @@
 Todo tank you:
 
 Multiplayer:
--Tank sync
--Tankmanager
+-Tank sync (mogelijk opgelost als je ze goed spawnd)
+-Goed spawnen: Nullpointer...
+-Tank/game manager
 -UI
 
 LEVEL IDEAS:

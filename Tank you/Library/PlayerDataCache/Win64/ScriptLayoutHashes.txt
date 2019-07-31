@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.0.9/Tank You NetworkTest.exe
+C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.0.18/Tank You NetworkTest.exe
 SceneListBegin?
 Assets/Scenes/_NetworkScenes/Lobby.unity
 Assets/Scenes/_NetworkScenes/PlayScene.unity
@@ -325,11 +325,13 @@ d5630f96bd5a6a6eed7e1754c3fb8703 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NetworkGameManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Prototype.NetworkLobby.DraggablePanel
 5ec13f2136dbcfd4e47238603ce91006 Assembly-CSharp.dll:.Factory
 ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AmbientOcclusion
 6b69b3c0601484388d7922113b1dc517 Assembly-CSharp.dll:.Farter
 7b3216bb34fdd4bb3a48518a010216c7 Assembly-CSharp.dll:.RampAsset
+19eac2473dea51350f8c91130e06e6ba Assembly-CSharp.dll:.NetworkDestroyTank
 c05d535bfcb6e005cb05d18d0df0e685 NavMeshComponentsExamples.dll:.RandomWalk
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
@@ -406,4 +408,3 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-19eac2473dea51350f8c91130e06e6ba Assembly-CSharp.dll:.NetworkDestroyTank
