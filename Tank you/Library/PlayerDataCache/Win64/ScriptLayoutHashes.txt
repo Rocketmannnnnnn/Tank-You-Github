@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.1.0/Tank You NetworkTest.exe
+C:/Users/Jaspe/Desktop/Tank You Network Tests/1.1.2/Tank You NetworkTest.exe
 SceneListBegin?
 Assets/Scenes/_NetworkScenes/Lobby.unity
 Assets/Scenes/_NetworkScenes/PlayScene.unity
@@ -278,6 +278,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 bb1f0eabf586c59f439d232ff8a83b3b Assembly-CSharp.dll:.SimpleCharacterMotor
 01cd7df85b88a04f93cc0c6cbc6613df Assembly-CSharp.dll:.FlameThrower
+e04973ff3b66174f7f003b3325b7775c Assembly-CSharp.dll:.TransformSync
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 8c830d49743b21a383bf97c9010ab451 Assembly-CSharp.dll:.PlayerTankController
 8d722e874bde92513d295f5d6bb98e69 NavMeshComponentsExamples.dll:.RandomInstancing
@@ -408,4 +409,3 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-5479775176e2d4de8cad64c1c4e64b40 Assembly-CSharp.dll:.TransformSync

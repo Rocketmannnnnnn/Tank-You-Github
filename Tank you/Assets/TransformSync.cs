@@ -11,8 +11,6 @@ public class TransformSync : NetworkBehaviour
     [SerializeField]
     private List<GameObject> rotationObjects = new List<GameObject>();
 
-    public string playerName;
-
     private void Start()
     {
         oldPosition = transform.position;
@@ -28,7 +26,7 @@ public class TransformSync : NetworkBehaviour
         if(oldPosition != transform.position)
         {
             oldPosition = transform.position;
-            CmdUpdatePosition(playerName, transform.position);
+            CmdUpdatePosition(transform.position);
         }
 
         for(int i = 0; i < rotationObjects.Count; i++)
@@ -36,21 +34,21 @@ public class TransformSync : NetworkBehaviour
             if(rotationObjects[i].transform.rotation != oldRotations[i])
             {
                 oldRotations[i] = rotationObjects[i].transform.rotation;
-                CmdUpdateRotation(playerName, i, rotationObjects[i].transform.rotation);
+                CmdUpdateRotation(i, rotationObjects[i].transform.rotation);
             }
         }
     }
 
     [Command]
-    private void CmdUpdatePosition(string clientName, Vector3 position)
+    private void CmdUpdatePosition(Vector3 position)
     {
-        RpcUpdatePosition(clientName, position);
+        RpcUpdatePosition(position);
     }
 
     [ClientRpc]
-    private void RpcUpdatePosition(string clientName, Vector3 position)
+    private void RpcUpdatePosition(Vector3 position)
     {
-        if (!playerName.Equals(clientName))
+        if (!isLocalPlayer)
         {
             transform.position = position;
             oldPosition = position;
@@ -58,15 +56,15 @@ public class TransformSync : NetworkBehaviour
     }
 
     [Command]
-    private void CmdUpdateRotation(string clientName, int listIndex, Quaternion rotation)
+    private void CmdUpdateRotation(int listIndex, Quaternion rotation)
     {
-        RpcUpdateRotation(clientName, listIndex, rotation);
+        RpcUpdateRotation(listIndex, rotation);
     }
 
     [ClientRpc]
-    private void RpcUpdateRotation(string clientName, int listIndex, Quaternion rotation)
+    private void RpcUpdateRotation(int listIndex, Quaternion rotation)
     {
-        if (!playerName.Equals(clientName))
+        if (!isLocalPlayer)
         {
             rotationObjects[listIndex].transform.rotation = rotation;
             oldRotations[listIndex] = rotation;

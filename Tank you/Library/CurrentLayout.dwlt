@@ -110,10 +110,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 498}
-  m_MaxSize: {x: 18008, y: 14048}
+  m_MinSize: {x: 711, y: 498}
+  m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
-  controlID: 84
+  controlID: 150
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 498}
-  m_MaxSize: {x: 18008, y: 14048}
+  m_MinSize: {x: 711, y: 498}
+  m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
-  controlID: 85
+  controlID: 151
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 86
+  controlID: 111
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 387
     height: 468
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -317,8 +317,8 @@ MonoBehaviour:
     y: 0
     width: 466
     height: 947
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 43.762108, y: -80.043526, z: 43.680893}
+    m_Target: {x: 42.007446, y: -78.11599, z: 43.588154}
     speed: 2
-    m_Value: {x: 43.762108, y: -80.043526, z: 43.680893}
+    m_Value: {x: 42.007446, y: -78.11599, z: 43.588154}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 1065
-    height: 449
+    height: 448
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
@@ -693,7 +693,7 @@ MonoBehaviour:
       splitSize: 6
       xOffset: 0
     m_HorizontalSplitter:
-      ID: 20637
+      ID: 44
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes: 40010000ea020000
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 97584
+  m_LastSelectedObjectID: 70384
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -771,7 +771,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fe97fdff3298fdff2ca2fdff4aa2fdff86b1fdffb8b1fdffc2bbfdffcebbfdffacbcfdffe0bcfdffdac6fdfff8c6fdff98d2fdffacd4fdffd2d4fdffcadefdffe8defdffd0eafdfff6eafdfffef4fdff0af5fdff90fffdffb6fffdffbe09feffca09feff2e21feff5421feff5c2bfeff7a2bfeff8036feffa636feffae40feffcc40feffba4bfeffe04bfeffd855fefff655feff8461feffaa61feffa26bfeffc06bfeff4077feff6677feff6e7efeff7a7efeffc87efeffee7efeffe688feff0489feff6e94feff9494feff8c9efeffaa9efeff28aafeff4eaafeff46b4feff64b4feffd2bffefff8bffefff0c9feff0ecafeff8ed5feffb4d5feffacdffeffcadffeff08eefeff2eeefeff26f8feff44f8feffb803ffffde03ffffd60dfffff40dffff7e19ffffa419ffff9c23ffffba23ffff362fffff5c2fffff6439ffff7039ffff5c47ffffac49ffffde49ffffd453ffffe053ffff1267ffff2c6effff7070ffffa270ffff9c7affffa87afffffc87ffff168fffff5a91ffff8c91ffff9c9bffffb89bffff629fffff6ea6ffff94a6ffffc6afffffb4baffffdabaffffd0c4fffff6c4ffffe8d0ffff0ed1ffff04dbffff2adbffff96e6ffffdce8ffff06e9ffff10f3ffff2cf3ffff10fbfffff4ffffff76490100
+      m_ExpandedIDs: 2692fbff4c92fbff6a9cfbff869cfbffc29dfbffe89dfbfff2a7fbfffea7fbff72b1fbffb4bcfbffdabcfbffe4c6fbfff0c6fbff9ad1fbffccd1fbffd6dbfbffe2dbfbffd6e4fbff60effbff1a0afcff460cfcff6c0cfcff7616fcffa022fcffc424fcffee24fcff7c2efcff982efcff7032fcff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -838,14 +838,14 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Jaspe\Documents\_Github\Tank-You-Github\Tank you
+  m_LastProjectPath: C:\Users\Jaspe\Documents\_GitProjects\Tank You Github\Tank you
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c22f0000
     m_LastClickedID: 12226
-    m_ExpandedIDs: 000000003225000056290000982e0000ee2e0000e0300000523300009e3500000c3a0000ac3b0000b43e00001a3f0000943f0000b63f0000b83f00001e4000002c410000b04200003443000076430000d64300005e4400003445000088450000ec45000024460000f8460000304900009e4c0000a84c0000744d0000ba5200002c53000048540000fc5500000c5b0000365d00003e5d0000266000007a62000088620000a6640000726900007469000076690000786900007a6900007c6900007e69000080690000826900008469000086690000886900008a6900008c6900008e69000090690000926900009469000096690000986900009a6900009c6900009e690000a0690000a2690000
+    m_ExpandedIDs: 000000003225000058290000d04e0000d2920000c6a9000006cb00001ecb0000e8cb000094cc00002ccd0000c6ce00005ccf00000cd000003ad000003ed0000078d0000088d000008ad00000aad00000f0d0000078d1000088d10000acd10000d4d10000f0d1000036d2000066d200006ed200009ed20000f2d30000fad3000022d4000068d4000050d5000074d50000c2d5000022d60000b2d600009ed700005ed8000066d800002cd90000d4d90000d8d90000b0da000076de000078de00007ade00007cde00007ede000080de000082de000084de000086de000088de00008ade00008cde00008ede000090de000092de000094de000096de000098de00009ade00009cde00009ede0000a0de0000a2de0000a4de0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -870,24 +870,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 619}
+    scrollPos: {x: 0, y: 1508}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000003225000056290000982e0000ee2e0000e0300000523300009e3500000c3a0000ac3b0000b43e00001a3f0000263f0000943f0000b63f0000b83f00001e4000002c410000b04200003443000076430000d64300005e4400003445000088450000ec45000024460000f8460000304900009e4c0000a84c0000744d0000424e0000ba5200002c53000048540000fc5500002a5800000c5b0000365d00003e5d0000266000007a62000088620000a6640000726900007469000076690000786900007a6900007c6900007e69000080690000826900008469000086690000886900008a6900008c6900008e69000090690000926900009469000096690000986900009a6900009c6900009e690000a0690000a2690000
+    m_ExpandedIDs: ffffffff000000003225000058290000d04e0000d2920000c6a9000006cb00001ecb0000e8cb000094cc00002ccd000086cd0000c6ce00005ccf0000bccf000002d000000cd000003ad000003ed0000078d0000088d000008ad00000aad00000f0d0000078d1000088d10000acd10000d4d10000f0d1000036d2000066d200006ed200009ed20000f2d30000fad3000022d4000068d4000050d5000074d50000c2d50000d4d5000022d60000b2d600009ed700005ed8000066d800002cd90000d4d90000d8d90000b0da000076de000078de00007ade00007cde00007ede000080de000082de000084de000086de000088de00008ade00008cde00008ede000090de000092de000094de000096de000098de00009ade00009cde00009ede0000a0de0000a2de0000a4de0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Test Scene
-      m_OriginalName: Test Scene
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 20020
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
