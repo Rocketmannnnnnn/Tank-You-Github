@@ -10,6 +10,8 @@ public class NetworkLobbyHook : LobbyHook
     {
         LobbyPlayer lobby = lobbyPlayer.GetComponent<LobbyPlayer>();
         SetupLocalPlayer localPlayer = gamePlayer.GetComponent<SetupLocalPlayer>();
+        TransformSync sync = gamePlayer.GetComponent<TransformSync>();
+        sync.playerName = lobby.playerName;
 
         localPlayer.playerColor = lobby.playerColor;
     }

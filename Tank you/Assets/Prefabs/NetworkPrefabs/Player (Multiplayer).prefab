@@ -132,16 +132,12 @@ GameObject:
   m_Component:
   - component: {fileID: 124}
   - component: {fileID: 161}
-  - component: {fileID: 257}
+  - component: {fileID: 255}
   - component: {fileID: 260}
+  - component: {fileID: 257}
   - component: {fileID: 251}
   - component: {fileID: 259}
-  - component: {fileID: 258}
-  - component: {fileID: 253}
-  - component: {fileID: 252}
-  - component: {fileID: 254}
-  - component: {fileID: 255}
-  - component: {fileID: 256}
+  - component: {fileID: 8403731865262541410}
   m_Layer: 0
   m_Name: Player (Multiplayer)
   m_TagString: Tank
@@ -184,150 +180,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ac084217ea78bb4cad24b0977cf11dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawnpos: {fileID: 122}
-  bullet: {fileID: 914426587449053466, guid: 5fdbf44579d7e124aaca3dfb03016e15, type: 3}
-  mine: {fileID: 8880340664080352682, guid: be64942266c97b142ad752734d0f9ae0, type: 3}
-  barrel: {fileID: 75}
-  frame: {fileID: 73}
-  tracks: {fileID: 76}
-  fireDelay: 0.75
-  tankMovementSpeed: 2
-  mineDelay: 5
---- !u!114 &260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8f5aec069dc3914ebef85f6165c44aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mat: {fileID: 2100000, guid: 336707becd4fd4c4192d52c0ac7fe87e, type: 2}
-  barrel: {fileID: 75}
-  frame: {fileID: 73}
-  playerColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e91f8c0ec0238946b8e81bbfecff2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a0d05de0639585459ba7817ea23a81e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 6757391582754824400, guid: c92efcfd2dfd9694a99a546887142512,
-    type: 3}
-  cross: {fileID: 4233264210880626202, guid: f50052018ab41404ea34d23da75b8a63, type: 3}
---- !u!114 &258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 125}
-  m_ChildIndex: 0
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_MovementThreshold: 0.001
-  m_InterpolateRotation: 0.5
-  m_InterpolateMovement: 0.5
---- !u!114 &253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 122}
-  m_ChildIndex: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_MovementThreshold: 0.001
-  m_InterpolateRotation: 0.5
-  m_InterpolateMovement: 0.5
---- !u!114 &252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 123}
-  m_ChildIndex: 2
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_MovementThreshold: 0.001
-  m_InterpolateRotation: 0.5
-  m_InterpolateMovement: 0.5
---- !u!114 &254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 126}
-  m_ChildIndex: 3
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_MovementThreshold: 0.001
-  m_InterpolateRotation: 0.5
-  m_InterpolateMovement: 0.5
 --- !u!114 &255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +213,7 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &256
+--- !u!114 &260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,19 +222,78 @@ MonoBehaviour:
   m_GameObject: {fileID: 74}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: b8f5aec069dc3914ebef85f6165c44aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
+  mat: {fileID: 2100000, guid: 336707becd4fd4c4192d52c0ac7fe87e, type: 2}
+  barrel: {fileID: 75}
+  frame: {fileID: 73}
+  playerColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac084217ea78bb4cad24b0977cf11dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnpos: {fileID: 122}
+  bullet: {fileID: 914426587449053466, guid: 5fdbf44579d7e124aaca3dfb03016e15, type: 3}
+  mine: {fileID: 8880340664080352682, guid: be64942266c97b142ad752734d0f9ae0, type: 3}
+  barrel: {fileID: 75}
+  frame: {fileID: 73}
+  tracks: {fileID: 76}
+  fireDelay: 0.75
+  tankMovementSpeed: 2
+  mineDelay: 5
+--- !u!114 &251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e91f8c0ec0238946b8e81bbfecff2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0d05de0639585459ba7817ea23a81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathExplosion: {fileID: 6757391582754824400, guid: c92efcfd2dfd9694a99a546887142512,
+    type: 3}
+  cross: {fileID: 4233264210880626202, guid: f50052018ab41404ea34d23da75b8a63, type: 3}
+--- !u!114 &8403731865262541410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4891fc94671f1747aa4002a8dbceeea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationObjects:
+  - {fileID: 75}
+  - {fileID: 73}
+  - {fileID: 76}
+  playerName: 
 --- !u!1 &75
 GameObject:
   m_ObjectHideFlags: 0
