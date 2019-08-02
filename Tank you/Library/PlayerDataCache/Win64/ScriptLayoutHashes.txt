@@ -1,59 +1,9 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Beta V1.3/Tank You Beta V1.3.exe
+C:/Users/Jaspe/Desktop/Tank You Network Tests/1.1.2/Tank You NetworkTest.exe
 SceneListBegin?
-Assets/Scenes/Main Menu.unity
-Assets/Scenes/_Levels 1-10/Level 1.unity
-Assets/Scenes/_Levels 1-10/Level 2.unity
-Assets/Scenes/_Levels 1-10/Level 3.unity
-Assets/Scenes/_Levels 1-10/Level 4.unity
-Assets/Scenes/_Levels 1-10/Level 5.unity
-Assets/Scenes/_Levels 1-10/Level 6.unity
-Assets/Scenes/_Levels 1-10/Level 7.unity
-Assets/Scenes/_Levels 1-10/Level 8.unity
-Assets/Scenes/_Levels 1-10/Level 9.unity
-Assets/Scenes/_Levels 1-10/Level 10.unity
-Assets/Scenes/_Levels 11-20/Level 11.unity
-Assets/Scenes/_Levels 11-20/Level 12.unity
-Assets/Scenes/_Levels 11-20/Level 13.unity
-Assets/Scenes/_Levels 11-20/Level 14.unity
-Assets/Scenes/_Levels 11-20/Level 15.unity
-Assets/Scenes/_Levels 11-20/Level 16.unity
-Assets/Scenes/_Levels 11-20/Level 17.unity
-Assets/Scenes/_Levels 11-20/Level 18.unity
-Assets/Scenes/_Levels 11-20/Level 19.unity
-Assets/Scenes/_Levels 11-20/Level 20.unity
-Assets/Scenes/_Levels 21-30/Level 21.unity
-Assets/Scenes/_Levels 21-30/Level 22.unity
-Assets/Scenes/_Levels 21-30/Level 23.unity
-Assets/Scenes/_Levels 21-30/Level 24.unity
-Assets/Scenes/_Levels 21-30/Level 25.unity
-Assets/Scenes/_Levels 21-30/Level 26.unity
-Assets/Scenes/_Levels 21-30/Level 27.unity
-Assets/Scenes/_Levels 21-30/Level 28.unity
-Assets/Scenes/_Levels 21-30/Level 29.unity
-Assets/Scenes/_Levels 21-30/Level 30.unity
-Assets/Scenes/_Levels 31-40/Level 31.unity
-Assets/Scenes/_Levels 31-40/Level 32.unity
-Assets/Scenes/_Levels 31-40/Level 33.unity
-Assets/Scenes/_Levels 31-40/Level 34.unity
-Assets/Scenes/_Levels 31-40/Level 35.unity
-Assets/Scenes/_Levels 31-40/Level 36.unity
-Assets/Scenes/_Levels 31-40/Level 37.unity
-Assets/Scenes/_Levels 31-40/Level 38.unity
-Assets/Scenes/_Levels 31-40/Level 39.unity
-Assets/Scenes/_Levels 31-40/Level 40.unity
-Assets/Scenes/_Levels 41-50/Level 41.unity
-Assets/Scenes/_Levels 41-50/Level 42.unity
-Assets/Scenes/_Levels 41-50/Level 43.unity
-Assets/Scenes/_Levels 41-50/Level 44.unity
-Assets/Scenes/_Levels 41-50/Level 45.unity
-Assets/Scenes/_Levels 41-50/Level 46.unity
-Assets/Scenes/_Levels 41-50/Level 47.unity
-Assets/Scenes/_Levels 41-50/Level 48.unity
-Assets/Scenes/_Levels 41-50/Level 49.unity
-Assets/Scenes/_Levels 41-50/Level 50.unity
-Assets/Scenes/NetworkLevel.unity
+Assets/Scenes/_NetworkScenes/Lobby.unity
+Assets/Scenes/_NetworkScenes/PlayScene.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 a2edbd06efb2157215acadcaf13150a1 Assembly-CSharp.dll:.ChangeOnContact
@@ -79,7 +29,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Polybrush.z_ZoomOverride
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TankVelocity
 c8c672fee8a258266e51b55a210b8083 NavMeshComponents.dll:UnityEngine.AI.NavMeshLink
-4909406e33d06fe8f79137845f2ab60f Assembly-CSharp.dll:.SetupLocalPlayer
+a6c88c1dbbbfd90fbad1882f16a40455 Assembly-CSharp.dll:.SetupLocalPlayer
 9c08de5639e3297e8804fc1353baaae7 Assembly-CSharp.dll:.MineDropper
 71f7f12b8d0f4fd73590db8bcb6d453c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Bloom
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
@@ -171,7 +121,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 de0e373f9e7fb0fa48caeb13c2e57300 NavMeshComponentsExamples.dll:.DestroyOnTrigger
 6b27e602ffeb13cf00696cdae4dd0fd2 Assembly-CSharp.dll:.LineAimAssist
 e82c0521cdfe8cb6a168ef7208a98d4a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Vignette
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NetworkGameManager
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8747051d8c53856e2def93af4f2a8b08 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -290,6 +239,7 @@ fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 758b5d99bd0554ee74733433b3433b11 NavMeshComponentsExamples.dll:.DungeonManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HideMovement
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NetworkLobbyHook
 2d6ea9f07fa3c7102f0b27122149380b Assembly-CSharp.dll:.SmartAimV1
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 31b86e04f058c421830d9ffea5005747 Assembly-CSharp.dll:.LevelManager
@@ -328,6 +278,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 bb1f0eabf586c59f439d232ff8a83b3b Assembly-CSharp.dll:.SimpleCharacterMotor
 01cd7df85b88a04f93cc0c6cbc6613df Assembly-CSharp.dll:.FlameThrower
+e04973ff3b66174f7f003b3325b7775c Assembly-CSharp.dll:.TransformSync
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 8c830d49743b21a383bf97c9010ab451 Assembly-CSharp.dll:.PlayerTankController
 8d722e874bde92513d295f5d6bb98e69 NavMeshComponentsExamples.dll:.RandomInstancing
@@ -360,7 +311,6 @@ c6dda53e4a9f99528895c50135b25373 Assembly-CSharp.dll:.EnemyAimV3
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 f978b8921f176b5dfa8e62a5d40962a0 Assembly-CSharp.dll:.Bullet
 8d4458b476a9a4dd8df843a849fcfffa NavMeshComponents.dll:UnityEngine.AI.NavMeshSurface
-21e871d89bbce53c038fc75ad1b7c7f3 Assembly-CSharp.dll:.PlayerSpawner
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RandomMovement
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3849f6c5d44f1bcfd206cafbb18a3840 Assembly-CSharp.dll:.SpecialOpsAim
@@ -376,11 +326,13 @@ d5630f96bd5a6a6eed7e1754c3fb8703 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NetworkGameManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Prototype.NetworkLobby.DraggablePanel
 5ec13f2136dbcfd4e47238603ce91006 Assembly-CSharp.dll:.Factory
 ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AmbientOcclusion
 6b69b3c0601484388d7922113b1dc517 Assembly-CSharp.dll:.Farter
 7b3216bb34fdd4bb3a48518a010216c7 Assembly-CSharp.dll:.RampAsset
+19eac2473dea51350f8c91130e06e6ba Assembly-CSharp.dll:.NetworkDestroyTank
 c05d535bfcb6e005cb05d18d0df0e685 NavMeshComponentsExamples.dll:.RandomWalk
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour

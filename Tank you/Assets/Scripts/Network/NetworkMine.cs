@@ -57,7 +57,7 @@ public class NetworkMine : NetworkBehaviour
 
                 if (other.transform.root.gameObject.CompareTag("Tank"))
                 {
-                    other.transform.root.gameObject.BroadcastMessage("die");
+                    other.transform.root.gameObject.BroadcastMessage("Cmddie");
                 }
                 else
                 {

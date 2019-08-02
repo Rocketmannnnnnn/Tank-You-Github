@@ -14,14 +14,17 @@ public class SetupLocalPlayer : NetworkBehaviour
     [SerializeField]
     private GameObject frame;
 
+    [SyncVar]
+    public Color playerColor = Color.white;
+
     void Start()
     {
         if (isLocalPlayer)
         {
             GetComponent<MPPlayerTankController>().enabled = true;
-            barrel.GetComponent<Renderer>().material = mat;
-            frame.GetComponent<Renderer>().material = mat;
-            GetComponent<TankTag>().setTeamTag("Player");
         }
+
+        barrel.GetComponent<Renderer>().material.color = playerColor;
+        frame.GetComponent<Renderer>().material.color = playerColor;
     }
 }
