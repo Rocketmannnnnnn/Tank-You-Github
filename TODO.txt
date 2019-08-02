@@ -1,7 +1,6 @@
 Todo tank you:
 
 Multiplayer:
--Landscape
 -Win lose
 -Tanks op achtergrond (als hoofdscherm) in lobby
 -Aim line op MP tank zetten

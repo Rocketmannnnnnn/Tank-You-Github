@@ -39,6 +39,12 @@ public class NetworkDestroyTank : NetworkBehaviour
     [Command]
     private void Cmddie()
     {
+        RpcDie();
+    }
+
+    [ClientRpc]
+    private void RpcDie()
+    {
         Instantiate(deathExplosion, transform.position, transform.rotation);
         Vector3 crossPosition = transform.position;
         crossPosition.y = 0.01f;

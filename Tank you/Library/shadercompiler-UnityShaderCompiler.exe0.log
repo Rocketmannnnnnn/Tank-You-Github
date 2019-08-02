@@ -1,6 +1,65 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: preprocess
+  insize=26685 outsize=5657 ok=1
+Cmd: preprocess
+  insize=8702 outsize=1460 ok=1
+Cmd: preprocess
+  insize=2472 outsize=694 ok=1
+Cmd: preprocess
+  insize=29973 outsize=7181 ok=1
+Cmd: preprocess
+  insize=1396 outsize=451 ok=1
+Cmd: preprocess
+  insize=10106 outsize=2838 ok=1
+Cmd: preprocess
+  insize=19530 outsize=1445 ok=1
+Cmd: preprocess
+  insize=11428 outsize=4072 ok=1
+Cmd: preprocess
+  insize=21531 outsize=1786 ok=1
+Cmd: preprocess
+  insize=24978 outsize=6722 ok=1
+Cmd: preprocess
+  insize=21093 outsize=1681 ok=1
+Cmd: preprocess
+  insize=2426 outsize=1009 ok=1
+Cmd: preprocess
+  insize=25853 outsize=2109 ok=1
+Cmd: preprocess
+  insize=1543 outsize=459 ok=1
+Cmd: preprocess
+  insize=2053 outsize=674 ok=1
+Cmd: preprocess
+  insize=24659 outsize=5077 ok=1
+Cmd: preprocess
+  insize=1832 outsize=599 ok=1
+Cmd: preprocess
+  insize=24814 outsize=4893 ok=1
+Cmd: preprocess
+  insize=22933 outsize=1903 ok=1
+Cmd: preprocess
+  insize=34011 outsize=9638 ok=1
+Cmd: preprocess
+  insize=25828 outsize=5865 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (0): texcoord1 missing from surface shader's vertex input struct (appdata), disabled lightmaps and meta pass generation
+  error: 1 plat 21 at (0): texcoord2 missing from surface shader's vertex input struct (appdata), disabled dynamic GI and meta pass generation
+  insize=2867 outsize=1318 ok=1
+Cmd: preprocess
+  insize=21838 outsize=1772 ok=1
+Cmd: preprocess
+  insize=22067 outsize=4050 ok=1
+Cmd: preprocess
+  insize=1681 outsize=447 ok=1
+Cmd: preprocess
+  insize=25696 outsize=5631 ok=1
+Cmd: preprocess
+  insize=1038 outsize=373 ok=1
+Cmd: preprocess
+  insize=24139 outsize=1518 ok=1
+Cmd: preprocess
+  insize=24981 outsize=1613 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
