@@ -1,10 +1,13 @@
 Todo tank you:
 
 Multiplayer:
--Tank sync (mogelijk opgelost als je ze goed spawnd)
--Goed spawnen: Nullpointer...
--Tank/game manager
--UI
+-Landscape
+-Win lose
+-Tanks op achtergrond (als hoofdscherm) in lobby
+-Aim line op MP tank zetten
+
+Main menu:
+-UI verbeteren
 
 LEVEL IDEAS:
 -Meerdere teams
