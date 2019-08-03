@@ -17,7 +17,7 @@ public class NetworkDestroyTank : NetworkBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            Cmddie();
+            die();
         }
     }
 
@@ -32,9 +32,20 @@ public class NetworkDestroyTank : NetworkBehaviour
             {
                 if (hit.transform.gameObject == other.gameObject)
                 {
-                    Cmddie();
+                    die();
                 }
             }
+        }
+    }
+
+    private void die()
+    {
+        if (isServer)
+        {
+            RpcDie();
+        } else
+        {
+            Cmddie();
         }
     }
 
@@ -42,15 +53,16 @@ public class NetworkDestroyTank : NetworkBehaviour
     private void Cmddie()
     {
         RpcDie();
-        Instantiate(deathExplosion, transform.position, transform.rotation);
-        Vector3 crossPosition = transform.position;
-        crossPosition.y = 0.01f;
-        Instantiate(cross, crossPosition, transform.rotation);
-        Destroy(gameObject);
+        spawnDeathStuff();
     }
 
     [ClientRpc]
     private void RpcDie()
+    {
+        spawnDeathStuff();
+    }
+
+    private void spawnDeathStuff()
     {
         Instantiate(deathExplosion, transform.position, transform.rotation);
         Vector3 crossPosition = transform.position;
@@ -61,10 +73,11 @@ public class NetworkDestroyTank : NetworkBehaviour
 
     private void OnDestroy()
     {
-        GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
-        if (tanks.Length == 1)
+        NetworkGameManager ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();
+
+        if (ngm != null)
         {
-            GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>().gameOverUI(tanks[0].GetComponent<SetupLocalPlayer>().playerName);
+            ngm.deadTank();
         }
     }
 }

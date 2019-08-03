@@ -3,8 +3,8 @@ Todo tank you:
 Credits geven aan ons kevin (Onion Capers)
 
 Multiplayer:
--Win lose
--Meer online levels
+-Meer online levels maken
+-Code maken om door te verwijzen, zie lobbymanager ServerLoadScene ofzo
 
 Main menu:
 -UI verbeteren
