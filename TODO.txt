@@ -3,7 +3,7 @@ Todo tank you:
 Multiplayer:
 -Win lose
 -Tanks op achtergrond (als hoofdscherm) in lobby
--Aim line op MP tank zetten
+-Meer online levels
 
 Main menu:
 -UI verbeteren
