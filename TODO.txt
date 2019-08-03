@@ -2,7 +2,6 @@ Todo tank you:
 
 Multiplayer:
 -Win lose
--Tanks op achtergrond (als hoofdscherm) in lobby
 -Meer online levels
 
 Main menu:

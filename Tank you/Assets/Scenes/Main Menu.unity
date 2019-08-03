@@ -6742,7 +6742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d72526704580d14399fdba12b52cf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onlineScene: NetworkLevel
+  onlineScene: Lobby
   fullCanvas: {fileID: 562827818}
   startLevelObject: {fileID: 2139149946}
   resumeLevelObject: {fileID: 487654511}
