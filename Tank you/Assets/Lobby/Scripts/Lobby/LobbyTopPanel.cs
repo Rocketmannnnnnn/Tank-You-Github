@@ -41,6 +41,8 @@ namespace Prototype.NetworkLobby
             {
                 panelImage.enabled = isDisplayed;
             }
+            //Zelf gedaan!
+            Cursor.visible = visible;
         }
     }
 }
