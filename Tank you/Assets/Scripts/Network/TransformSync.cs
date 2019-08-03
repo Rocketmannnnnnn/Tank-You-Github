@@ -43,6 +43,8 @@ public class TransformSync : NetworkBehaviour
     private void CmdUpdatePosition(Vector3 position)
     {
         RpcUpdatePosition(position);
+        transform.position = position;
+        oldPosition = position;
     }
 
     [ClientRpc]
@@ -59,6 +61,8 @@ public class TransformSync : NetworkBehaviour
     private void CmdUpdateRotation(int listIndex, Quaternion rotation)
     {
         RpcUpdateRotation(listIndex, rotation);
+        rotationObjects[listIndex].transform.rotation = rotation;
+        oldRotations[listIndex] = rotation;
     }
 
     [ClientRpc]

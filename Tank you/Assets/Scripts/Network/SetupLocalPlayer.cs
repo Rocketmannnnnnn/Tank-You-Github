@@ -17,6 +17,9 @@ public class SetupLocalPlayer : NetworkBehaviour
     [SyncVar]
     public Color playerColor = Color.white;
 
+    [SyncVar]
+    public string playerName;
+
     void Start()
     {
         if (isLocalPlayer)

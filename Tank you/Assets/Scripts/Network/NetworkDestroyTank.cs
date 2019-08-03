@@ -5,6 +5,8 @@ using UnityEngine.Networking;
 
 public class NetworkDestroyTank : NetworkBehaviour
 {
+    private NetworkGameManager ngm;
+
     [SerializeField]
     private GameObject deathExplosion;
 
@@ -40,6 +42,11 @@ public class NetworkDestroyTank : NetworkBehaviour
     private void Cmddie()
     {
         RpcDie();
+        Instantiate(deathExplosion, transform.position, transform.rotation);
+        Vector3 crossPosition = transform.position;
+        crossPosition.y = 0.01f;
+        Instantiate(cross, crossPosition, transform.rotation);
+        Destroy(gameObject);
     }
 
     [ClientRpc]
@@ -50,5 +57,14 @@ public class NetworkDestroyTank : NetworkBehaviour
         crossPosition.y = 0.01f;
         Instantiate(cross, crossPosition, transform.rotation);
         Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
+        if (tanks.Length == 1)
+        {
+            GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>().gameOverUI(tanks[0].GetComponent<SetupLocalPlayer>().playerName);
+        }
     }
 }
