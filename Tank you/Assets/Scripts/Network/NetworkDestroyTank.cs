@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System;
 
 public class NetworkDestroyTank : NetworkBehaviour
 {
@@ -73,11 +74,17 @@ public class NetworkDestroyTank : NetworkBehaviour
 
     private void OnDestroy()
     {
-        NetworkGameManager ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();
-
-        if (ngm != null)
+        try
         {
-            ngm.deadTank();
+            ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();
+
+            if (ngm != null)
+            {
+                ngm.deadTank();
+            }
+        } catch (NullReferenceException)
+        {
+
         }
     }
 }

@@ -8,6 +8,7 @@ using Prototype.NetworkLobby;
 public class NetworkGameManager : NetworkBehaviour
 {
     private Animator anim;
+    private LobbyManager lobbyManager;
 
     [SerializeField]
     private GameObject fireworks;
@@ -21,9 +22,13 @@ public class NetworkGameManager : NetworkBehaviour
     [SerializeField]
     private string nextLevel;
 
+    [SerializeField]
+    private float loadDelay = 6f;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
+        lobbyManager = GameObject.Find("LobbyManager").GetComponent<LobbyManager>();
     }
 
     public void deadTank()
@@ -37,20 +42,30 @@ public class NetworkGameManager : NetworkBehaviour
 
     public void gameOverUI(string winner)
     {
+        fireworks.SetActive(true);
+        winText.SetText(winner + " won!");
+        anim.SetBool("GameOver", true);
+
         if (isLastLevel)
         {
-            fireworks.SetActive(true);
-            winText.SetText(winner + " won!");
-            anim.SetBool("GameOver", true);
-            GameObject.Find("LobbyManager").GetComponentInChildren<LobbyTopPanel>().ToggleVisibility(true);
+            anim.SetBool("LastLevel", true);
+            lobbyManager.gameObject.GetComponentInChildren<LobbyTopPanel>().ToggleVisibility(true);
         } else
         {
-
+            if (isServer)
+            {
+                Invoke("loadNextLevel", loadDelay);
+            }
         }
     }
 
     public bool IsLastLevel()
     {
         return isLastLevel;
+    }
+
+    void loadNextLevel()
+    {
+        lobbyManager.ServerChangeScene(nextLevel);
     }
 }
