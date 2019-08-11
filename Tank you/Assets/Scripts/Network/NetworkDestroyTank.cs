@@ -14,6 +14,11 @@ public class NetworkDestroyTank : NetworkBehaviour
     [SerializeField]
     private GameObject cross;
 
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -41,39 +46,37 @@ public class NetworkDestroyTank : NetworkBehaviour
 
     private void die()
     {
+        deathAction();
+
         if (isServer)
         {
             RpcDie();
         } else
         {
-            Cmddie();
+            CmdDie();
         }
     }
 
     [Command]
-    private void Cmddie()
+    private void CmdDie()
     {
+        deathAction();
         RpcDie();
-        spawnDeathStuff();
     }
 
     [ClientRpc]
     private void RpcDie()
     {
-        spawnDeathStuff();
+        deathAction();
     }
 
-    private void spawnDeathStuff()
+    private void deathAction()
     {
         Instantiate(deathExplosion, transform.position, transform.rotation);
         Vector3 crossPosition = transform.position;
         crossPosition.y = 0.01f;
         Instantiate(cross, crossPosition, transform.rotation);
-        Destroy(gameObject);
-    }
-
-    private void OnDestroy()
-    {
+        gameObject.SetActive(false);
         try
         {
             ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();
@@ -82,7 +85,8 @@ public class NetworkDestroyTank : NetworkBehaviour
             {
                 ngm.deadTank();
             }
-        } catch (NullReferenceException)
+        }
+        catch (NullReferenceException)
         {
 
         }

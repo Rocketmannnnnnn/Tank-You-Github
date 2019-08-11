@@ -7,6 +7,7 @@ public class NetworkLineAimAssist : NetworkBehaviour
 {
     private int floorMask;
     private LineRenderer line;
+    private GameObject lineObjInstance;
 
     [SerializeField]
     private GameObject lineEndObject;
@@ -29,12 +30,16 @@ public class NetworkLineAimAssist : NetworkBehaviour
         {
             line.startColor = GetComponent<SetupLocalPlayer>().playerColor;
             floorMask = 1 << 11;
-            lineEndObject = Instantiate(lineEndObject);
+            lineObjInstance = Instantiate(lineEndObject, transform.position, transform.rotation);
         }
     }
 
     void Update()
     {
+        if(lineObjInstance == null)
+        {
+            lineObjInstance = Instantiate(lineEndObject, transform.position, transform.rotation);
+        }
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit groundHit;
 
@@ -51,7 +56,7 @@ public class NetworkLineAimAssist : NetworkBehaviour
             }
 
             line.SetPosition(1, hitpos);
-            lineEndObject.transform.position = hitpos;
+            lineObjInstance.transform.position = hitpos;
 
             //Debug.Log(groundHit.transform.gameObject.name);
         }

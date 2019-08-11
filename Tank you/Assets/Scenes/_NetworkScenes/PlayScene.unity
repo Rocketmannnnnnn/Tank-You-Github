@@ -2701,6 +2701,7 @@ MonoBehaviour:
   isLastLevel: 0
   nextLevel: PlayScene2
   loadDelay: 6
+  firstLevel: 1
 --- !u!4 &1542886164
 Transform:
   m_ObjectHideFlags: 0

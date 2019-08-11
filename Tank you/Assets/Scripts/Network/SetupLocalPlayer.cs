@@ -22,6 +22,11 @@ public class SetupLocalPlayer : NetworkBehaviour
 
     void Start()
     {
+        setUp();
+    }
+
+    public void setUp()
+    {
         if (isLocalPlayer)
         {
             GetComponent<MPPlayerTankController>().enabled = true;

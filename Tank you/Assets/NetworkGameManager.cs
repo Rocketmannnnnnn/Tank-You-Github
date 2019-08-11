@@ -9,6 +9,7 @@ public class NetworkGameManager : NetworkBehaviour
 {
     private Animator anim;
     private LobbyManager lobbyManager;
+    private NetworkLobbyHook hook;
 
     [SerializeField]
     private GameObject fireworks;
@@ -25,10 +26,26 @@ public class NetworkGameManager : NetworkBehaviour
     [SerializeField]
     private float loadDelay = 6f;
 
+    [SerializeField]
+    private bool firstLevel = false;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
-        lobbyManager = GameObject.Find("LobbyManager").GetComponent<LobbyManager>();
+        GameObject lm = GameObject.Find("LobbyManager");
+        lobbyManager = lm.GetComponent<LobbyManager>();
+        hook = lm.GetComponent<NetworkLobbyHook>();
+
+        if (firstLevel)
+        {
+            hook.initPlayerList();
+        } else
+        {
+            foreach(GameObject tank in hook.getPlayerList())
+            {
+                tank.SetActive(true);
+            }
+        }
     }
 
     public void deadTank()
