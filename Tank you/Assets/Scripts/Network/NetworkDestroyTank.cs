@@ -46,22 +46,12 @@ public class NetworkDestroyTank : NetworkBehaviour
 
     private void die()
     {
-        deathAction();
-
         if (isServer)
         {
+            GetComponent<TankActivionSetter>().SetAllActive(false);
+            deathAction();
             RpcDie();
-        } else
-        {
-            CmdDie();
         }
-    }
-
-    [Command]
-    private void CmdDie()
-    {
-        deathAction();
-        RpcDie();
     }
 
     [ClientRpc]
@@ -76,7 +66,6 @@ public class NetworkDestroyTank : NetworkBehaviour
         Vector3 crossPosition = transform.position;
         crossPosition.y = 0.01f;
         Instantiate(cross, crossPosition, transform.rotation);
-        gameObject.SetActive(false);
         try
         {
             ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();

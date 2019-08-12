@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.1.9 Custom spawning/Tank You NetworkTest.exe
+C:/Users/Jaspe/Desktop/Tank You Network Development/Network 2.0/1.1.10 Tank activation setter/Tank You NetworkTest.exe
 SceneListBegin?
 Assets/Scenes/_NetworkScenes/Lobby.unity
 Assets/Scenes/_NetworkScenes/PlayScene.unity
@@ -412,3 +412,4 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+f4b7050c72dec7b4b65f91438e7d56cf Assembly-CSharp.dll:.TankActivionSetter

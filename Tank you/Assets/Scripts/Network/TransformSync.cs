@@ -26,7 +26,10 @@ public class TransformSync : NetworkBehaviour
         if(oldPosition != transform.position)
         {
             oldPosition = transform.position;
-            CmdUpdatePosition(transform.position);
+            if (isLocalPlayer)
+            {
+                CmdUpdatePosition(transform.position);
+            }
         }
 
         for(int i = 0; i < rotationObjects.Count; i++)

@@ -41,19 +41,33 @@ public class NetworkGameManager : NetworkBehaviour
             hook.initPlayerList();
         } else
         {
-            foreach(GameObject tank in hook.getPlayerList())
+            if (isServer)
             {
-                tank.SetActive(true);
+                foreach (GameObject tank in hook.getPlayerList())
+                {
+                    tank.GetComponent<TankActivionSetter>().SetAllActive(true);
+                }
             }
         }
     }
 
     public void deadTank()
     {
-        GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
-        if (tanks.Length == 1)
+        int activeTanks = 0;
+        GameObject activeTank = null;
+
+        foreach(GameObject tank in GameObject.FindGameObjectsWithTag("Tank"))
         {
-            gameOverUI(tanks[0].GetComponent<SetupLocalPlayer>().playerName);
+            if (tank.GetComponent<TankActivionSetter>().isActive)
+            {
+                activeTanks++;
+                activeTank = tank;
+            }
+        }
+        
+        if (activeTanks == 1)
+        {
+            gameOverUI(activeTank.GetComponent<SetupLocalPlayer>().playerName);
         }
     }
 
