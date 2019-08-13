@@ -30,7 +30,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Polybrush.z_ZoomOverride
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TankVelocity
 c8c672fee8a258266e51b55a210b8083 NavMeshComponents.dll:UnityEngine.AI.NavMeshLink
-8476c149fb0eae7a29d8848c033a5973 Assembly-CSharp.dll:.SetupLocalPlayer
+5939363123a2d236f9de55fb674c46d5 Assembly-CSharp.dll:.SetupLocalPlayer
 9c08de5639e3297e8804fc1353baaae7 Assembly-CSharp.dll:.MineDropper
 71f7f12b8d0f4fd73590db8bcb6d453c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Bloom
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
@@ -155,6 +155,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 f2d6f78254ca93fbc5b1ada07c8dcb72 NavMeshComponentsExamples.dll:.FreeCam
+f4b7050c72dec7b4b65f91438e7d56cf Assembly-CSharp.dll:.TankActivionSetter
 fb56860e12c4da8ad38e9523baa1e6c9 Assembly-CSharp.dll:.TankTag
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 566b2891fc0b379f0adf64ea8788949b Assembly-CSharp.dll:.NetworkMine
@@ -412,4 +413,3 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-f4b7050c72dec7b4b65f91438e7d56cf Assembly-CSharp.dll:.TankActivionSetter

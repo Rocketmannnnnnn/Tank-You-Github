@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 public class NetworkLobbyHook : LobbyHook
 {
     private List<GameObject> players;
+    private int playerNumber = 0;
 
     public override void OnLobbyServerSceneLoadedForPlayer(NetworkManager manager, GameObject lobbyPlayer, GameObject gamePlayer)
     {
@@ -15,6 +16,8 @@ public class NetworkLobbyHook : LobbyHook
         
         localPlayer.playerColor = lobby.playerColor;
         localPlayer.playerName = lobby.playerName;
+        localPlayer.playerNumber = playerNumber;
+        playerNumber++;
     }
 
     public void initPlayerList()

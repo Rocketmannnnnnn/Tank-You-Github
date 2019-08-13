@@ -43,9 +43,10 @@ public class NetworkGameManager : NetworkBehaviour
         {
             if (isServer)
             {
-                foreach (GameObject tank in hook.getPlayerList())
+                for(int i = 0; i < hook.getPlayerList().Count; i++)
                 {
-                    tank.GetComponent<TankActivionSetter>().SetAllActive(true);
+                    //GameObject tank = hook.getPlayerList()[i];
+                    //tank.GetComponent<TransformSync>().RpcSetPosition(lobbyManager.startPositions[i].position);
                 }
             }
         }

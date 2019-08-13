@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
+using Prototype.NetworkLobby;
 
 public class TankActivionSetter : NetworkBehaviour
 {
@@ -30,7 +32,6 @@ public class TankActivionSetter : NetworkBehaviour
     private void setActive(bool active)
     {
         isActive = active;
-
         foreach (MonoBehaviour monoBehaviour in GetComponents<MonoBehaviour>())
         {
             if (monoBehaviour.GetType() == typeof(MPPlayerTankController) || monoBehaviour.GetType() == typeof(NetworkLineAimAssist))
@@ -54,5 +55,24 @@ public class TankActivionSetter : NetworkBehaviour
         {
             GetComponent<LineRenderer>().enabled = active;
         }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnLevelLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLevelLoaded;
+    }
+
+    private void OnLevelLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        if (isLocalPlayer)
+        {
+            transform.position = GameObject.Find("LobbyManager").GetComponent<LobbyManager>().startPositions[GetComponent<SetupLocalPlayer>().playerNumber].position;
+        }
+        setActive(true);
     }
 }

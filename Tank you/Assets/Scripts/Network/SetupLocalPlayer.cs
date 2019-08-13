@@ -20,6 +20,9 @@ public class SetupLocalPlayer : NetworkBehaviour
     [SyncVar]
     public string playerName;
 
+    [SyncVar]
+    public int playerNumber;
+
     void Start()
     {
         setUp();

@@ -77,4 +77,13 @@ public class TransformSync : NetworkBehaviour
             oldRotations[listIndex] = rotation;
         }
     }
+
+    [ClientRpc]
+    public void RpcSetPosition(Vector3 position)
+    {
+        if (isLocalPlayer)
+        {
+            transform.position = position;
+        }
+    }
 }
