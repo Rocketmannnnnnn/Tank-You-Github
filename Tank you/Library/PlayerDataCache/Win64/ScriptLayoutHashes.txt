@@ -5,6 +5,9 @@ SceneListBegin?
 Assets/Scenes/_NetworkScenes/Lobby.unity
 Assets/Scenes/_NetworkScenes/PlayScene.unity
 Assets/Scenes/_NetworkScenes/PlayScene2.unity
+Assets/Scenes/_NetworkScenes/PlayScene3.unity
+Assets/Scenes/_NetworkScenes/PlayScene4.unity
+Assets/Scenes/_NetworkScenes/PlayScene5.unity
 SceneListEnd?
 71961c90b9e05ecb48b5969e15e1c70a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 a2edbd06efb2157215acadcaf13150a1 Assembly-CSharp.dll:.ChangeOnContact

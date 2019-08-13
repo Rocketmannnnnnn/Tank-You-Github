@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/_NetworkScenes/PlayScene2.unity
     guid: bd43de55252ec834eaaa9d09afb718bd
+  - enabled: 1
+    path: Assets/Scenes/_NetworkScenes/PlayScene3.unity
+    guid: b6cccbfc28aa1ff458ee7decddf947a1
+  - enabled: 1
+    path: Assets/Scenes/_NetworkScenes/PlayScene4.unity
+    guid: 8edb9dbb5add5454cb21dcfaa5b975e8
+  - enabled: 1
+    path: Assets/Scenes/_NetworkScenes/PlayScene5.unity
+    guid: 8451d60568e56f94294e976dae63d7ef
   m_configObjects: {}

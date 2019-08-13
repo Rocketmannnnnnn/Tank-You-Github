@@ -3,8 +3,8 @@ Todo tank you:
 Credits geven aan ons kevin (Onion Capers)
 
 Multiplayer:
--Meer online levels maken
--Code maken om door te verwijzen, zie lobbymanager ServerLoadScene ofzo
+- Dedicated server spawnt niet goed
+- Mine reageert niet op ontriggerstay & zonder parent
 
 Main menu:
 -UI verbeteren
