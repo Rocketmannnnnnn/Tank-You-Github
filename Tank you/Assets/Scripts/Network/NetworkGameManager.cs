@@ -39,16 +39,6 @@ public class NetworkGameManager : NetworkBehaviour
         if (firstLevel)
         {
             hook.initPlayerList();
-        } else
-        {
-            if (isServer)
-            {
-                for(int i = 0; i < hook.getPlayerList().Count; i++)
-                {
-                    //GameObject tank = hook.getPlayerList()[i];
-                    //tank.GetComponent<TransformSync>().RpcSetPosition(lobbyManager.startPositions[i].position);
-                }
-            }
         }
     }
 
