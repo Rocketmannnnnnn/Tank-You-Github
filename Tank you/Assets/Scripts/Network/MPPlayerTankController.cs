@@ -111,7 +111,7 @@ public class MPPlayerTankController : NetworkBehaviour
     private void CmddeployMine()
     {
         GameObject mineInstance = Instantiate(mine, transform.position, transform.rotation);
-        mineInstance.GetComponent<NetworkMine>().setParent(gameObject);
+        mineInstance.GetComponent<NetworkMine>().setParent(GetComponent<SetupLocalPlayer>().playerNumber);
         NetworkServer.Spawn(mineInstance);
     }
 
