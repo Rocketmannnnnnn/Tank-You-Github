@@ -14,6 +14,8 @@ public class FadeManager : MonoBehaviour
     private bool loading = false;
     private PauseManager pauseManager;
 
+    public bool killMusic = false;
+
     [SerializeField]
     private GameObject levelmanager;
     
@@ -58,7 +60,10 @@ public class FadeManager : MonoBehaviour
         {
             if(Time.time > loadMoment)
             {
-                Destroy(GameObject.FindWithTag("Music"));
+                if (killMusic)
+                {
+                    Destroy(GameObject.FindWithTag("Music"));
+                }
                 SceneManager.LoadScene(nextLevelIndex);
             }
         }

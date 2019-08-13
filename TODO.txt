@@ -4,7 +4,6 @@ Credits geven aan ons kevin (Onion Capers)
 
 Multiplayer:
 - Dedicated server spawnt niet goed
-- Mine reageert niet op ontriggerstay & zonder parent
 
 Main menu:
 -UI verbeteren

@@ -75,7 +75,7 @@ public class LevelManager : MonoBehaviour
         if(GameObject.FindWithTag("Music") == null)
         {
             musicInstance = Instantiate(musicObject);
-            DontDestroyOnLoad(musicInstance);
+            DontDestroyOnLoad(musicInstance.transform.root);
         }
 
         pauseManager = GetComponent<PauseManager>();
@@ -94,6 +94,7 @@ public class LevelManager : MonoBehaviour
                 {
                     if (lastLevel)
                     {
+                        fadeManager.killMusic = true;
                         fireWorks.SetActive(true);
                         
                         if (PlayerPrefs.HasKey("savedLevelNumber") && PlayerPrefs.HasKey("lives"))
@@ -145,6 +146,7 @@ public class LevelManager : MonoBehaviour
                             PlayerPrefs.DeleteKey("savedLevelNumber");
                             PlayerPrefs.DeleteKey("lives");
                         }
+                        fadeManager.killMusic = true;
                         fadeManager.sceneToLoad(0);
                         fadeManager.lose();
                     }
