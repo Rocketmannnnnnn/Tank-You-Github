@@ -5,7 +5,9 @@ using UnityEngine.Networking;
 
 public class NetworkMine : NetworkBehaviour
 {
-    private GameObject playerID;
+    [SyncVar]
+    private int playerID = -1;
+
     private bool wentOff = false;
 
     [SerializeField]
@@ -46,28 +48,35 @@ public class NetworkMine : NetworkBehaviour
 
     private void collisionCheck(Collider other)
     {
-        setNullParent(other.transform.root.gameObject);
-
-        if (wentOff || !(playerID == other.transform.root.gameObject))
+        if (other.CompareTag(notDestroyableTag) || other.transform.root.CompareTag(notDestroyableTag))
         {
-            if (!(other.gameObject.CompareTag(notDestroyableTag) || other.transform.root.gameObject.CompareTag(notDestroyableTag)) &&
-                !(other.gameObject.CompareTag("Mine") || other.transform.root.gameObject.CompareTag("Mine")))
-            {
-                explode();
+            //Do nothing, its ground or something like that
+            return;
+        }
+        else if (other.CompareTag("Mine") || other.transform.root.CompareTag("Mine"))
+        {
+            explode();
+        }
+        else if (other.transform.root.gameObject.CompareTag("Tank"))
+        {
+            int playerNumber = other.transform.root.GetComponent<SetupLocalPlayer>().playerNumber;
 
-                if (other.transform.root.gameObject.CompareTag("Tank"))
-                {
-                    other.transform.root.gameObject.BroadcastMessage("Cmddie");
-                }
-                else
-                {
-                    Destroy(other.transform.root.gameObject);
-                }
-            }
-            else if (other.gameObject.CompareTag("Mine") || other.transform.root.gameObject.CompareTag("Mine"))
+            if (!(playerID == playerNumber))
             {
+                other.transform.root.gameObject.BroadcastMessage("die");
                 explode();
             }
+            else if (wentOff)
+            {
+                other.transform.root.gameObject.BroadcastMessage("die");
+            }
+        }
+        else if (wentOff)
+        {
+            Destroy(other.transform.root.gameObject);
+        } else
+        {
+            explode();
         }
     }
 
@@ -107,16 +116,8 @@ public class NetworkMine : NetworkBehaviour
         explosionMoment = time;
     }
 
-    public void setParent(GameObject parent)
+    public void setParent(int playerNumber)
     {
-        this.playerID = parent;
-    }
-
-    public void setNullParent(GameObject parent)
-    {
-        if (playerID == null && parent.CompareTag("Tank"))
-        {
-            playerID = parent;
-        }
+        playerID = playerNumber;
     }
 }

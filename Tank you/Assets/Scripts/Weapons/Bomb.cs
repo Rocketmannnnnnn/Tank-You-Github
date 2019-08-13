@@ -31,7 +31,11 @@ public class Bomb : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        rb.isKinematic = true;
+        if(rb != null)
+        {
+            rb.isKinematic = true;
+        }
+        
         explode();
 
         if (other.transform.root.gameObject.CompareTag("Tank"))

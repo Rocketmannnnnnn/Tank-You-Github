@@ -2,20 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System;
 
 public class NetworkDestroyTank : NetworkBehaviour
 {
+    private NetworkGameManager ngm;
+
     [SerializeField]
     private GameObject deathExplosion;
 
     [SerializeField]
     private GameObject cross;
 
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            Cmddie();
+            die();
         }
     }
 
@@ -30,19 +38,46 @@ public class NetworkDestroyTank : NetworkBehaviour
             {
                 if (hit.transform.gameObject == other.gameObject)
                 {
-                    Cmddie();
+                    die();
                 }
             }
         }
     }
 
-    [Command]
-    private void Cmddie()
+    private void die()
+    {
+        if (isServer)
+        {
+            GetComponent<TankActivionSetter>().SetAllActive(false);
+            deathAction();
+            RpcDie();
+        }
+    }
+
+    [ClientRpc]
+    private void RpcDie()
+    {
+        deathAction();
+    }
+
+    private void deathAction()
     {
         Instantiate(deathExplosion, transform.position, transform.rotation);
         Vector3 crossPosition = transform.position;
         crossPosition.y = 0.01f;
         Instantiate(cross, crossPosition, transform.rotation);
-        Destroy(gameObject);
+        try
+        {
+            ngm = GameObject.FindWithTag("Managers").GetComponent<NetworkGameManager>();
+
+            if (ngm != null)
+            {
+                ngm.deadTank();
+            }
+        }
+        catch (NullReferenceException)
+        {
+
+        }
     }
 }

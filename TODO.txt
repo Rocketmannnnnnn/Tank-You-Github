@@ -1,10 +1,9 @@
 Todo tank you:
 
+Credits geven aan ons kevin (Onion Capers)
+
 Multiplayer:
--Landscape
--Win lose
--Tanks op achtergrond (als hoofdscherm) in lobby
--Aim line op MP tank zetten
+- Dedicated server spawnt niet goed
 
 Main menu:
 -UI verbeteren

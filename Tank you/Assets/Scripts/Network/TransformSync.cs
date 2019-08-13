@@ -26,7 +26,10 @@ public class TransformSync : NetworkBehaviour
         if(oldPosition != transform.position)
         {
             oldPosition = transform.position;
-            CmdUpdatePosition(transform.position);
+            if (isLocalPlayer)
+            {
+                CmdUpdatePosition(transform.position);
+            }
         }
 
         for(int i = 0; i < rotationObjects.Count; i++)
@@ -43,6 +46,8 @@ public class TransformSync : NetworkBehaviour
     private void CmdUpdatePosition(Vector3 position)
     {
         RpcUpdatePosition(position);
+        transform.position = position;
+        oldPosition = position;
     }
 
     [ClientRpc]
@@ -59,6 +64,8 @@ public class TransformSync : NetworkBehaviour
     private void CmdUpdateRotation(int listIndex, Quaternion rotation)
     {
         RpcUpdateRotation(listIndex, rotation);
+        rotationObjects[listIndex].transform.rotation = rotation;
+        oldRotations[listIndex] = rotation;
     }
 
     [ClientRpc]
@@ -68,6 +75,15 @@ public class TransformSync : NetworkBehaviour
         {
             rotationObjects[listIndex].transform.rotation = rotation;
             oldRotations[listIndex] = rotation;
+        }
+    }
+
+    [ClientRpc]
+    public void RpcSetPosition(Vector3 position)
+    {
+        if (isLocalPlayer)
+        {
+            transform.position = position;
         }
     }
 }
