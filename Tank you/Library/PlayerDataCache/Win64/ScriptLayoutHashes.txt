@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Beta V1.4/Tank You Beta.exe
+C:/Users/Jaspe/OneDrive - Avans Hogeschool/Andere files voor meerdere apparaten/Tank You Builds/Tank You V1.0.0/Tank You.exe
 SceneListBegin?
 Assets/Scenes/Main Menu.unity
 Assets/Scenes/_Levels 1-10/Level 1.unity

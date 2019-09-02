@@ -45,7 +45,9 @@ public class FadeManager : MonoBehaviour
         if (!mainMenu)
         {
             anim.Play("FadeIn");
-        } else
+            Cursor.visible = false;
+        }
+        else
         {
             anim.Play("FadeIdle");
         }
